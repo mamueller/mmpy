@@ -19,7 +19,7 @@
 
 project = 'mmpy'
 copyright = '2021, Markus'
-author = 'Markus'
+author = 'Markus Mueller, Holger Metzler, Veronica Ceballos, Carlos Sierra'
 
 # The full version, including alpha/beta/rc tags
 release = '1'
@@ -31,6 +31,13 @@ release = '1'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    "sphinx.ext.autodoc",
+    "sphinx.ext.coverage",
+    "sphinx.ext.mathjax",
+    "sphinx.ext.viewcode",
+    "sphinx.ext.napoleon",
+    "sphinx.ext.autosummary",
+    "sphinx_autodoc_typehints"
 ]
 
 # Add any paths that contain templates here, relative to this directory.
