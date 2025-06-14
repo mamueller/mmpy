@@ -1,0 +1,6 @@
+https://github.com/melissawm/minimalsphinx
+
+https://sphinx-tutorial.readthedocs.io/start/
+
+
+to build go to build_docs and say: make html

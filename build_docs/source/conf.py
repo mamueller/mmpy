@@ -10,16 +10,16 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
+import os
+import sys
+sys.path.insert(0, os.path.abspath('../src/mmpy/'))
 
 
 # -- Project information -----------------------------------------------------
 
 project = 'mmpy'
 copyright = '2021, Markus'
-author = 'Markus Mueller, Holger Metzler, Veronica Ceballos, Carlos Sierra'
+author = 'Markus Mueller '
 
 # The full version, including alpha/beta/rc tags
 release = '1'
@@ -32,13 +32,19 @@ release = '1'
 # ones.
 extensions = [
     "sphinx.ext.autodoc",
+    "sphinx.ext.doctest",
     "sphinx.ext.coverage",
     "sphinx.ext.mathjax",
     "sphinx.ext.viewcode",
     "sphinx.ext.napoleon",
     "sphinx.ext.autosummary",
     "sphinx_autodoc_typehints"
+    #"sphinx.ext.doctest",
+    #"sphinx.ext.coverage",
+    #"sphinx.ext.intersphinx",
 ]
+
+autosummary_generate = True
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
